@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Structures</title>
+    <style>
+        /* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container to center content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+.section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    overflow-x: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <a href="index.html"></a>
+    <header>
+        <div class="container">
+            <h1>Introduction to Data Structures</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#arrays">Arrays</a></li>
+                    <li><a href="#linked-list">Linked List</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#queue">Queue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro" class="section">
+        <div class="container">
+            <h2>What are Data Structures?</h2>
+            <p>Data structures are ways of organizing and storing data so that it can be accessed and modified efficiently. Understanding data structures is essential for developing efficient algorithms.</p>
+        </div>
+    </section>
+
+    <section id="arrays" class="section">
+        <div class="container">
+            <h2>Arrays</h2>
+            <p>An array is a collection of elements identified by index or key. All elements in an array are of the same type, and arrays provide fast access to elements using the index.</p>
+            <h3>Example of an Array:</h3>
+            <pre><code>
+let arr = [1, 2, 3, 4, 5];
+console.log(arr[0]); // Output: 1
+            </code></pre>
+        </div>
+    </section>
+
+    <section id="linked-list" class="section">
+        <div class="container">
+            <h2>Linked List</h2>
+            <p>A linked list is a linear collection of elements, where each element (called a node) points to the next node. Unlike arrays, linked lists do not have a fixed size, and elements can be inserted or removed dynamically.</p>
+            <h3>Example of a Linked List:</h3>
+            <pre><code>
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
+
+let node1 = new Node(1);
+let node2 = new Node(2);
+node1.next = node2;
+console.log(node1.next.value); // Output: 2
+            </code></pre>
+        </div>
+    </section>
+
+    <section id="stack" class="section">
+        <div class="container">
+            <h2>Stack</h2>
+            <p>A stack is a collection of elements that follows the Last In, First Out (LIFO) principle. Elements are added and removed from the top of the stack.</p>
+            <h3>Example of a Stack:</h3>
+            <pre><code>
+class Stack {
+  constructor() {
+    this.items = [];
+  }
+
+  push(element) {
+    this.items.push(element);
+  }
+
+  pop() {
+    return this.items.pop();
+  }
+}
+
+let stack = new Stack();
+stack.push(1);
+stack.push(2);
+console.log(stack.pop()); // Output: 2
+            </code></pre>
+        </div>
+    </section>
+
+    <section id="queue" class="section">
+        <div class="container">
+            <h2>Queue</h2>
+            <p>A queue is a collection of elements that follows the First In, First Out (FIFO) principle. Elements are added to the back of the queue and removed from the front.</p>
+            <h3>Example of a Queue:</h3>
+            <pre><code>
+class Queue {
+  constructor() {
+    this.items = [];
+  }
+
+  enqueue(element) {
+    this.items.push(element);
+  }
+
+  dequeue() {
+    return this.items.shift();
+  }
+}
+
+let queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+console.log(queue.dequeue()); // Output: 1
+            </code></pre>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Data Structures Tutorial | All Rights Reserved</p>
+        </div>
+        <div class="back-button">
+            <a href="index.html" style="background-color: white;">Back</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Fundamentals</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: pink;
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: pink;
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <a href="index.html"></a>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#html-basics">HTML Basics</a></li>
+                <li><a href="#css-basics">CSS Basics</a></li>
+                <li><a href="#html-structure">HTML Structure</a></li>
+                <li><a href="#css-layout">CSS Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="html-basics">
+            <h1>HTML Basics</h1>
+            <ul>
+                <li>Tags (headings, paragraphs, links, images)</li>
+                <li>Attributes (id, class, src, href)</li>
+                <li>Semantic HTML</li>
+            </ul>
+        </section>
+        <section id="css-basics">
+            <h1>CSS Basics</h1>
+            <ul>
+                <li>Selectors (id, class, tag)</li>
+                <li>Properties (color, background, font-size)</li>
+                <li>Values (px, %, em)</li>
+            </ul>
+        </section>
+        <section id="html-structure">
+            <h1>HTML Structure</h1>
+            <ul>
+                <li>Header (header)</li>
+                <li>Navigation (nav)</li>
+                <li>Main Content (main)</li>
+                <li>Footer (footer)</li>
+            </ul>
+        </section>
+        <section id="css-layout">
+            <h1>CSS Layout</h1>
+            <ul>
+                <li>Display (block, inline, inline-block)</li>
+                <li>Position (static, relative, absolute)</li>
+                <li>Float (left, right)</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HTML and CSS Fundamentals</p>
+        <div class="back-button">
+            <a href="index.html" style="background-color: white;">Back</a>
+        </div>
+    </footer>
+</body>
+</html>
